@@ -1,7 +1,7 @@
 import PIL 
-import streamlit as st
-from streamlit_lottie import st_lottie as sl
+import streamlit 
+import streamlit_lottie 
 import requests
 import json
-from matplotlib import pyplot as plt
-import numpy as np
+import matplotlib 
+import numpy 
