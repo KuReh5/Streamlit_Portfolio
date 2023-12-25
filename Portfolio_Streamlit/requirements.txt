@@ -1,7 +1,6 @@
-import PIL 
-import streamlit 
-import streamlit_lottie 
-import requests
-import json
-import matplotlib 
-import numpy 
+pip install pillow
+pip install streamlit 
+pip install streamlit_lottie 
+pip install requests
+pip install json
+
