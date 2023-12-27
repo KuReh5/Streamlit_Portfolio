@@ -8,22 +8,22 @@ import numpy as np
 #to run code: python -m streamlit run Port.py
 st.set_page_config(page_title="Ku Reh Portfolio",layout="wide")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# def load_lottieurl(url):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
 def local_css(file):
     with open(file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 #images
 #python_anim = load_lottieurl("https://lottie.host/ffaa1c88-8e1e-4a58-a7fd-dcce73b9f59c/1rOMigRSM1.json")
-propic = Image.open("ProPic.jpg")
-art_pic = Image.open("art.jpg")
-resume = open("Ku_Reh_Resume_ General.docx", 'r')
-riverland_logo = Image.open("riverland_logo.jpg")
-mnsu_logo = Image.open("mnsu_logo.jpg")
+# propic = Image.open("ProPic.jpg")
+# art_pic = Image.open("art.jpg")
+# resume = open("Ku_Reh_Resume_ General.docx", 'r')
+# riverland_logo = Image.open("riverland_logo.jpg")
+# mnsu_logo = Image.open("mnsu_logo.jpg")
 
 #Insert Image
 def InsertIMG(path):
@@ -67,12 +67,12 @@ with tab[0]:
                 'Riverland Community College'
                 '**GPA**: 3.7'
                 '**Degree**: AA'
-                st.image(riverland_logo,None,200,200)
+                st.image('riverland_logo.jpg',None,200,200)
             with c[1]:
                 'Minnesota State University Mankato'
                 '**GPA**: 3.8'
                 '**Degree**: Health Informtics (BS)'
-                st.image(mnsu_logo,None,300,300)
+                st.image('mnsu_logo.jpg',None,300,300)
         with st.expander("**Hobbies**"):
             col = st.columns(4)
             with col[0]:
@@ -87,11 +87,11 @@ with tab[0]:
                 sl(Anim('piano_anim.json'))
             with col[3]:
                 'Draw'
-                st.image(art_pic,None, 150)
+                st.image('art.jpg',None, 150)
         #ResumeDownload
 
     with bioCol[1]:
-        st.image(propic,None, 350)
+        st.image('ProPic.jpg',None, 350)
 
 
     st.write("---")
@@ -198,7 +198,7 @@ with tab[2]:
                 diabetes.'''
             '[Jupyter Notebook](https://github.com/KuReh5/Diabetes/blob/main/Diabetes443.ipynb)'
         with col[1]:
-            st.image(InsertIMG('diabetes.png'),None, 350)
+            st.image('diabetes.png',None, 350)
 
     #MAUIProj
     with st.container(border=True):
@@ -211,11 +211,12 @@ with tab[2]:
         '''
         col = st.columns(3)
         with col[0]:
-            st.image(InsertIMG('maui1.png'),None, 350)
+            #st.image(InsertIMG('maui1.png'),None, 350)
+            st.image('maui1.png',None, 350)
         with col[1]:
-            st.image(InsertIMG('maui2.png'),None, 150)
+            st.image('maui2.png',None, 150)
         with col[2]:
-            st.image(InsertIMG('maui3.png'),None, 150)
+            st.image('maui3.png',None, 150)
         '[Github](https://github.com/KuReh5/GoChart)'
     #UnityProj
     with st.container(border=True):
@@ -231,7 +232,7 @@ with tab[2]:
         
             '[Nikana](https://github.com/ZacharySkinner/Nikana)'
         with col[1]:
-             st.image(InsertIMG('unity.png'),None, 300)
+             st.image('unity.png',None, 300)
          
     #TableuProj
     with st.container(border=True):
@@ -244,7 +245,7 @@ with tab[2]:
             '''
             '[Dashboard](https://public.tableau.com/app/profile/ku.reh/viz/Portfolio_17017144621630/Dashboard1)'
         with col[1]:
-             st.image(InsertIMG('tableau.png'),None, 300)
+             st.image('tableau.png',None, 300)
          
 #endregion
 #region Contact page
