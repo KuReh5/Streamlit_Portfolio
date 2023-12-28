@@ -67,12 +67,12 @@ with tab[0]:
                 'Riverland Community College'
                 '**GPA**: 3.7'
                 '**Degree**: AA'
-                st.image('riverland_logo.jpg',None,200,200)
+                #st.image('riverland_logo.jpg',None,200,200)
             with c[1]:
                 'Minnesota State University Mankato'
                 '**GPA**: 3.8'
                 '**Degree**: Health Informtics (BS)'
-                st.image('mnsu_logo.jpg',None,300,300)
+                #st.image('mnsu_logo.jpg',None,300,300)
         with st.expander("**Hobbies**"):
             col = st.columns(4)
             with col[0]:
@@ -87,11 +87,12 @@ with tab[0]:
                 sl(Anim('piano_anim.json'))
             with col[3]:
                 'Draw'
-                st.image('art.jpg',None, 150)
+                #st.image('art.jpg',None, 150)
         #ResumeDownload
 
     with bioCol[1]:
-        st.image('ProPic.jpg',None, 350)
+        #st.image('ProPic.jpg',None, 350)
+        ''
 
 
     st.write("---")
@@ -134,7 +135,8 @@ with tab[1]:
             '-Unity'
             '-Data Structures'
         with col[1]:
-            st.image(InsertIMG('csharp.png'),None, 100)
+            #st.image(InsertIMG('csharp.png'),None, 100)
+            ''
     ('---')
     bottomcol = st.columns(3)
     with bottomcol[0]:
@@ -161,7 +163,8 @@ with tab[1]:
             '-Create Maps'
             '-Predict trends'
         with col[1]:
-            st.image(InsertIMG('gis.jpg'),None, 100)
+            #st.image(InsertIMG('gis.jpg'),None, 100)
+            ''
     ('---')
     thirdcol = st.columns(3)
     with thirdcol[0]:
@@ -198,7 +201,8 @@ with tab[2]:
                 diabetes.'''
             '[Jupyter Notebook](https://github.com/KuReh5/Diabetes/blob/main/Diabetes443.ipynb)'
         with col[1]:
-            st.image('diabetes.png',None, 350)
+            #st.image('diabetes.png',None, 350)
+            ''
 
     #MAUIProj
     with st.container(border=True):
@@ -212,11 +216,14 @@ with tab[2]:
         col = st.columns(3)
         with col[0]:
             #st.image(InsertIMG('maui1.png'),None, 350)
-            st.image('maui1.png',None, 350)
+            #st.image('maui1.png',None, 350)
+            ''
         with col[1]:
-            st.image('maui2.png',None, 150)
+            #st.image('maui2.png',None, 150)
+            ''
         with col[2]:
-            st.image('maui3.png',None, 150)
+            #st.image('maui3.png',None, 150)
+            ''
         '[Github](https://github.com/KuReh5/GoChart)'
     #UnityProj
     with st.container(border=True):
@@ -232,7 +239,8 @@ with tab[2]:
         
             '[Nikana](https://github.com/ZacharySkinner/Nikana)'
         with col[1]:
-             st.image('unity.png',None, 300)
+             #st.image('unity.png',None, 300)
+             ''
          
     #TableuProj
     with st.container(border=True):
@@ -245,7 +253,8 @@ with tab[2]:
             '''
             '[Dashboard](https://public.tableau.com/app/profile/ku.reh/viz/Portfolio_17017144621630/Dashboard1)'
         with col[1]:
-             st.image('tableau.png',None, 300)
+             #st.image('tableau.png',None, 300)
+             ''
          
 #endregion
 #region Contact page
