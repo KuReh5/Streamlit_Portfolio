@@ -99,8 +99,7 @@ with tab[0]:
         #ResumeDownload
 
     with bioCol[1]:
-        st.image('https://onedrive.live.com/?cid=2E2BD1F5261D350C&id=2E2BD1F5261D350C%2188150&parId=2E2BD1F5261D350C%2188100&o=OneUp',None, 350)
-        
+        st.image('Portfolio_Streamlit/ProPic.jpg',None, 350)        
 
 
     st.write("---")
