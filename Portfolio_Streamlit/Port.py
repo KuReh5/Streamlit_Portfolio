@@ -78,13 +78,13 @@ with tab[0]:
             with col[0]:
                 'Coding'
 
-                sl(Anim('coding_anim.json'))
+                #sl(Anim('coding_anim.json'))
             with col[1]:
                 'Volleyball'
-                sl(Anim('Vol_anim.json'))
+                #sl(Anim('Vol_anim.json'))
             with col[2]:
                 'Piano, guitar, drum'
-                sl(Anim('piano_anim.json'))
+                #sl(Anim('piano_anim.json'))
             with col[3]:
                 'Draw'
                 #st.image('art.jpg',None, 150)
@@ -117,7 +117,8 @@ with tab[1]:
             '-.Net MAUI app'
             'Streamlit web app'
         with col[1]:
-            sl(Anim('python_anim.json'), height=100, width=100)
+           # sl(Anim('python_anim.json'), height=100, width=100)
+           ''
 
     with topcol[1]:
         col = st.columns([.6,.4])
@@ -127,7 +128,8 @@ with tab[1]:
             '-MySQL & MS SQL Server'
             '-Diagrams(ERD,FDD)'
         with col[1]:
-            sl(Anim('sql_anim.json'),height=100, width=100)
+            #sl(Anim('sql_anim.json'),height=100, width=100)
+            ''
     with topcol[2]:
         col = st.columns([.4,.6])
         with col[0]:
@@ -146,7 +148,8 @@ with tab[1]:
             '-Train/Test models'
             '-Predict outcomes'
         with col[1]:
-            sl(Anim('analysis1.json'),height=100, width=100)
+            #sl(Anim('analysis1.json'),height=100, width=100)
+            ""
     with bottomcol[1]:
         col = st.columns([.4,.6])
         with col[0]:
@@ -154,7 +157,8 @@ with tab[1]:
             '-Tableau'
             '-Matplotlib, Seaborn'
         with col[1]:
-            sl(Anim('analysis.json'),height=100, width=100)
+            #sl(Anim('analysis.json'),height=100, width=100)
+            ''
 
     with bottomcol[2]:
         col = st.columns([.4,.6])
@@ -175,7 +179,8 @@ with tab[1]:
             ' -Vulnerability scans'
             ' -Firewalls'
         with col[1]:
-            sl(Anim('firewall_anim.json'),height=100, width=100)
+            #sl(Anim('firewall_anim.json'),height=100, width=100)
+            ''
 
     ('---')
     with st.expander('Frequency of languages used'):
