@@ -5,8 +5,7 @@ import requests
 import json
 from matplotlib import pyplot as plt
 import numpy as np
-import pathlib
-import os
+
 #to run code: python -m streamlit run Port.py
 st.set_page_config(page_title="Ku Reh Portfolio",layout="wide")
 
@@ -16,17 +15,13 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-code_dir = pathlib.Path(__file__).parent.resolve()
-files_location = code_dir / ".." / "Portfolio_Streamlit" 
-files_location = files_location.resolve()  
 
-images = os.listdir(files_location)
 
 def local_css(file):
     with open(file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 #images
-python_anim = load_lottieurl("https://lottie.host/ffaa1c88-8e1e-4a58-a7fd-dcce73b9f59c/1rOMigRSM1.json")
+#python_anim = load_lottieurl("https://lottie.host/ffaa1c88-8e1e-4a58-a7fd-dcce73b9f59c/1rOMigRSM1.json")
 # propic = Image.open("ProPic.jpg")
 # art_pic = Image.open("art.jpg")
 # resume = open("Ku_Reh_Resume_ General.docx", 'r')
@@ -75,31 +70,32 @@ with tab[0]:
                 'Riverland Community College'
                 '**GPA**: 3.7'
                 '**Degree**: AA'
-                #st.image('riverland_logo.jpg',None,200,200)
+                st.image('Portfolio_Streamlit/riverland_logo.jpg',None,200,200)
             with c[1]:
                 'Minnesota State University Mankato'
                 '**GPA**: 3.8'
                 '**Degree**: Health Informtics (BS)'
-                #st.image('mnsu_logo.jpg',None,300,300)
+                st.image('Portfolio_Streamlit/mnsu_logo.jpg',None,300,300)
         with st.expander("**Hobbies**"):
             col = st.columns(4)
             with col[0]:
                 'Coding'
                 
-                #sl(Anim('coding_anim.json'))
+                sl(Anim('Portfolio_Streamlit/coding_anim.json'))
             with col[1]:
                 'Volleyball'
-                #sl(Anim('Vol_anim.json'))
+                sl(Anim('Portfolio_Streamlit/Vol_anim.json'))
             with col[2]:
                 'Piano, guitar, drum'
-                #sl(Anim('piano_anim.json'))
+                sl(Anim('Portfolio_Streamlit/piano_anim.json'))
             with col[3]:
                 'Draw'
-                #st.image('art.jpg',None, 150)
+                st.image('Portfolio_Streamlit/art.jpg',None, 150)
         #ResumeDownload
 
     with bioCol[1]:
-        st.image('Portfolio_Streamlit/ProPic.jpg',None, 350)        
+        st.image('Portfolio_Streamlit/ProPic.jpg',None, 350)
+        
 
 
     st.write("---")
@@ -109,10 +105,6 @@ with tab[0]:
         st.write("[Github](https://github.com/KuReh5) [Linkedin](https://www.linkedin.com/in/ku-reh-8211661b5/)")
 
 
-
-    #right col
-    #with col[1]:
-        #sl(python_anim)
 #endregion
 #region Skills page
 with tab[1]:
@@ -124,8 +116,8 @@ with tab[1]:
             '-.Net MAUI app'
             'Streamlit web app'
         with col[1]:
-           # sl(Anim('python_anim.json'), height=100, width=100)
-           sl(python_anim)
+            sl(Anim('Portfolio_Streamlit/python_anim.json'), height=100, width=100)
+          
 
     with topcol[1]:
         col = st.columns([.6,.4])
@@ -135,8 +127,8 @@ with tab[1]:
             '-MySQL & MS SQL Server'
             '-Diagrams(ERD,FDD)'
         with col[1]:
-            #sl(Anim('sql_anim.json'),height=100, width=100)
-            ''
+            sl(Anim('Portfolio_Streamlit/sql_anim.json'),height=100, width=100)
+            
     with topcol[2]:
         col = st.columns([.4,.6])
         with col[0]:
@@ -144,8 +136,8 @@ with tab[1]:
             '-Unity'
             '-Data Structures'
         with col[1]:
-            #st.image(InsertIMG('csharp.png'),None, 100)
-            ''
+            st.image(InsertIMG('Portfolio_Streamlit/csharp.png'),None, 100)
+            
     ('---')
     bottomcol = st.columns(3)
     with bottomcol[0]:
@@ -155,8 +147,8 @@ with tab[1]:
             '-Train/Test models'
             '-Predict outcomes'
         with col[1]:
-            #sl(Anim('analysis1.json'),height=100, width=100)
-            ""
+            sl(Anim('Portfolio_Streamlit/analysis1.json'),height=100, width=100)
+            
     with bottomcol[1]:
         col = st.columns([.4,.6])
         with col[0]:
@@ -164,8 +156,8 @@ with tab[1]:
             '-Tableau'
             '-Matplotlib, Seaborn'
         with col[1]:
-            #sl(Anim('analysis.json'),height=100, width=100)
-            ''
+            sl(Anim('Portfolio_Streamlit/analysis.json'),height=100, width=100)
+            
 
     with bottomcol[2]:
         col = st.columns([.4,.6])
@@ -174,8 +166,8 @@ with tab[1]:
             '-Create Maps'
             '-Predict trends'
         with col[1]:
-            #st.image(InsertIMG('gis.jpg'),None, 100)
-            ''
+            st.image(InsertIMG('Portfolio_Streamlit/gis.jpg'),None, 100)
+            
     ('---')
     thirdcol = st.columns(3)
     with thirdcol[0]:
@@ -186,8 +178,8 @@ with tab[1]:
             ' -Vulnerability scans'
             ' -Firewalls'
         with col[1]:
-            #sl(Anim('firewall_anim.json'),height=100, width=100)
-            ''
+            sl(Anim('Portfolio_Streamlit/firewall_anim.json'),height=100, width=100)
+            
 
     ('---')
     with st.expander('Frequency of languages used'):
@@ -213,8 +205,8 @@ with tab[2]:
                 diabetes.'''
             '[Jupyter Notebook](https://github.com/KuReh5/Diabetes/blob/main/Diabetes443.ipynb)'
         with col[1]:
-            #st.image('diabetes.png',None, 350)
-            ''
+            st.image('Portfolio_Streamlit/diabetes.png',None, 350)
+            
 
     #MAUIProj
     with st.container(border=True):
@@ -227,15 +219,14 @@ with tab[2]:
         '''
         col = st.columns(3)
         with col[0]:
-            #st.image(InsertIMG('maui1.png'),None, 350)
-            #st.image('maui1.png',None, 350)
-            ''
+            st.image('Portfolio_Streamlit/maui1.png',None, 350)
+            
         with col[1]:
-            #st.image('maui2.png',None, 150)
-            ''
+            st.image('Portfolio_Streamlit/maui2.png',None, 150)
+            
         with col[2]:
-            #st.image('maui3.png',None, 150)
-            ''
+            st.image('Portfolio_Streamlit/maui3.png',None, 150)
+            
         '[Github](https://github.com/KuReh5/GoChart)'
     #UnityProj
     with st.container(border=True):
@@ -251,8 +242,8 @@ with tab[2]:
         
             '[Nikana](https://github.com/ZacharySkinner/Nikana)'
         with col[1]:
-             #st.image('unity.png',None, 300)
-             ''
+             st.image('Portfolio_Streamlit/unity.png',None, 300)
+             
          
     #TableuProj
     with st.container(border=True):
@@ -265,8 +256,8 @@ with tab[2]:
             '''
             '[Dashboard](https://public.tableau.com/app/profile/ku.reh/viz/Portfolio_17017144621630/Dashboard1)'
         with col[1]:
-             #st.image('tableau.png',None, 300)
-             ''
+             st.image('Portfolio_Streamlit/tableau.png',None, 300)
+             
          
 #endregion
 #region Contact page
@@ -280,7 +271,7 @@ with tab[3]:
      <button type="submit">Send</button>
 </form>'''
     st.markdown(contact_form, unsafe_allow_html=True)
-    #local_css('style.css')
+    local_css('Portfolio_Streamlit/style.css')
 #endregion
 
 
