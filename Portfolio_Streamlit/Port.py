@@ -85,7 +85,7 @@ with tab[0]:
             col = st.columns(4)
             with col[0]:
                 'Coding'
-                sl(python_anim)
+                
                 #sl(Anim('coding_anim.json'))
             with col[1]:
                 'Volleyball'
@@ -99,8 +99,8 @@ with tab[0]:
         #ResumeDownload
 
     with bioCol[1]:
-        #st.image('ProPic.jpg',None, 350)
-        ''
+        st.image('https://onedrive.live.com/?cid=2E2BD1F5261D350C&id=2E2BD1F5261D350C%2188150&parId=2E2BD1F5261D350C%2188100&o=OneUp',None, 350)
+        
 
 
     st.write("---")
@@ -126,7 +126,7 @@ with tab[1]:
             'Streamlit web app'
         with col[1]:
            # sl(Anim('python_anim.json'), height=100, width=100)
-           ''
+           sl(python_anim)
 
     with topcol[1]:
         col = st.columns([.6,.4])
