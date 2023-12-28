@@ -5,20 +5,28 @@ import requests
 import json
 from matplotlib import pyplot as plt
 import numpy as np
+import pathlib
+import os
 #to run code: python -m streamlit run Port.py
 st.set_page_config(page_title="Ku Reh Portfolio",layout="wide")
 
-# def load_lottieurl(url):
-#     r = requests.get(url)
-#     if r.status_code != 200:
-#         return None
-#     return r.json()
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+code_dir = pathlib.Path(__file__).parent.resolve()
+files_location = code_dir / ".." / "Portfolio_Streamlit" 
+files_location = files_location.resolve()  
+
+images = os.listdir(files_location)
 
 def local_css(file):
     with open(file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 #images
-#python_anim = load_lottieurl("https://lottie.host/ffaa1c88-8e1e-4a58-a7fd-dcce73b9f59c/1rOMigRSM1.json")
+python_anim = load_lottieurl("https://lottie.host/ffaa1c88-8e1e-4a58-a7fd-dcce73b9f59c/1rOMigRSM1.json")
 # propic = Image.open("ProPic.jpg")
 # art_pic = Image.open("art.jpg")
 # resume = open("Ku_Reh_Resume_ General.docx", 'r')
@@ -77,7 +85,7 @@ with tab[0]:
             col = st.columns(4)
             with col[0]:
                 'Coding'
-
+                sl(python_anim)
                 #sl(Anim('coding_anim.json'))
             with col[1]:
                 'Volleyball'
