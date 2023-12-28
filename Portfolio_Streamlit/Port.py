@@ -273,7 +273,7 @@ with tab[3]:
      <button type="submit">Send</button>
 </form>'''
     st.markdown(contact_form, unsafe_allow_html=True)
-    local_css('style.css')
+    #local_css('style.css')
 #endregion
 
 
