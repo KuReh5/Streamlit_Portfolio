@@ -57,8 +57,8 @@ with tab[0]:
 
     with bioCol[0]:
         st.header("Hi 👋")
-        st.markdown('<p class="normal-font">My name is Ku Reh. I am a developer proficient in Python.\
-            With years of experience, I extend my learning in data analysis.\
+        st.markdown('<p class="normal-font">My name is Ku Reh. I am a data analyst proficient in Python.\
+            With years of experience, I extend my learning to data visualization and data cleaning.\
             I am passionate about using technologies to better the lives of people.\
             I concentrate my studies on healthcare technologies.</p>', unsafe_allow_html=True)
 
