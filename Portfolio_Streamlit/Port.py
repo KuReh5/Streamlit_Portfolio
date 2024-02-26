@@ -54,10 +54,15 @@ with tab[0]:
 
     with bioCol[0]:
         st.header("Hi 👋")
-        st.markdown('<p class="normal-font">My name is Ku Reh. I am a developer proficient in Python.\
-            With years of experience, I extend my learning in data analysis.\
-            I am passionate about using technologies to better the lives of people.\
-            I concentrate my studies on healthcare technologies.</p>', unsafe_allow_html=True)
+        st.markdown('<p class="normal-font">My name is Ku Reh. As a seasoned software developer proficient in both Python and C#, \
+                    I have delved into the fascinating world of game development using the Unity engine. My journey began with a \
+                    passion for creating immersive experiences, and over time, I’ve honed my skills in these languages. \
+                    Beyond game development, I’ve also explored the realm of data analysis, extracting insights from complex \
+                    datasets to inform decision-making.\
+What truly excites me is the intersection of technology and healthcare. I envision leveraging my development expertise to \
+contribute meaningfully to the health field. Having mastered various design patterns—from singletons and observers to factories\
+    and decorators—I am well-equipped to create innovative solutions. Whether it’s building health apps, developing medical simulations,\
+    or analyzing patient data, I’m committed to making a positive impact on people’s lives through technology.</p>', unsafe_allow_html=True)
 
         ('---')
         with st.expander("**Education**"):
