@@ -96,7 +96,7 @@ contribute meaningfully to the health field. Having mastered various design patt
         #ResumeDownload
 
     with bioCol[1]:
-        st.image(propic,None, 350)
+        st.image(InsertIMG('ProPic.jpg'),None, 350)
 
 
     st.write("---")
